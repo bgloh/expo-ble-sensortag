@@ -24,7 +24,7 @@ import {
 import { Device } from "react-native-ble-plx"
 import { SensorTagTests, type SensorTagTestMetadata } from "./Tests"
 
-const Button = function(props) {
+const Button = function (props) {
   const { onPress, title, ...restProps } = props
   return (
     <TouchableOpacity onPress={onPress} {...restProps}>
@@ -181,7 +181,7 @@ class SensorTag extends Component<Props, State> {
         animationType="fade"
         transparent={true}
         visible={this.state.showModal}
-        onRequestClose={() => {}}
+        onRequestClose={() => { }}
       >
         <View
           style={{
@@ -254,7 +254,7 @@ class SensorTag extends Component<Props, State> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#a92a35",
+    backgroundColor: "green",
     padding: 5
   },
   textStyle: {
